@@ -1,0 +1,19 @@
+
+h1 {
+  color: hotpink;
+}
+
+.main {
+  background-color: peachpuff;
+}
+
+
+.post{
+  border: 1px solid;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.post-date{
+  color: gray;
+}
