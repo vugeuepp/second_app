@@ -1,12 +1,14 @@
 <div class="header">
   <h1>TWICE APP</h1>
   <%= form_with url: "/posts", method: :post,id: "form" do |form| %>
-    <%= form.text_field :content %>
+    <%= form.text_field :content , id: "content"%>
     <%= form.submit '가자！' , id: "submit" %>
   <% end %>
 </div>
+
 <div class="main">
   <%= link_to 'GO HARD', '/posts/new' %>
+  <div id="list"></div>
   <% @posts.each do |post| %>
     <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
       <div class="post-date">
